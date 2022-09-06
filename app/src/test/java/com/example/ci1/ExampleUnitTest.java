@@ -33,7 +33,8 @@ public class ExampleUnitTest {
         assertEquals(m.max(4, 2), 4);
     }
 
-    @Test void testMax1() {
+    @Test
+    public void testMax1() {
         MainActivity m = new MainActivity();
         assertEquals(m.max(2, 4), 4);
     }
