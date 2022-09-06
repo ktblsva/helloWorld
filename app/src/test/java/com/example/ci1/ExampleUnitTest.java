@@ -10,6 +10,7 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
+
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
@@ -17,25 +18,25 @@ public class ExampleUnitTest {
 
     @Test
     public void testMin() {
-        MainActivity m = new MainActivity();
-        assertEquals(m.min(2, 4), 2);
+        MinMax t = new MinMax();
+        assertEquals(t.min(2, 4), 2);
     }
 
     @Test
     public void testMin1() {
-        MainActivity m = new MainActivity();
+        MinMax m = new MinMax();
         assertEquals(m.min(4, 2), 2);
     }
 
     @Test
     public void testMax() {
-        MainActivity m = new MainActivity();
+        MinMax m = new MinMax();
         assertEquals(m.max(4, 2), 4);
     }
 
     @Test
     public void testMax1() {
-        MainActivity m = new MainActivity();
+        MinMax m = new MinMax();
         assertEquals(m.max(2, 4), 4);
     }
 }
